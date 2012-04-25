@@ -1,0 +1,302 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<title>Light of Peace - Wordpress Template Documentation</title>
+<link rel="stylesheet" type="text/css" media="all" href="css/reset.css" />
+<link rel="stylesheet" type="text/css" media="all" href="css/style.css" />
+<link rel="stylesheet" type="text/css" media="all" href="css/960.css" />
+</head>
+<body>
+<div class="container_12" id="page-wrap" >
+	<div class="grid_9 prefix_3" id="toc">
+		<h1>Light of Peace Wordpress Template Documentation v1.4</h1>
+	</div>
+	<div class="clear">&nbsp;</div>
+	<div class="grid_3">
+		<h3>Table of Contents</h3>
+		<ol>
+			<li><a href="#about">About The Theme</a></li>
+			<li><a href="#install">Installation</a></li>
+			<li><a href="#configure">Configuring Theme</a></li>
+			<li><a href="#htmlStructure">HTML Structure</a></li>
+			<li><a href="#cssFiles">CSS Files and Structure</a></li>
+			<li><a href="#javascript">JavaScript</a></li>
+			<li><a href="#credits">Sources and Credits</a></li>
+			<li><a href="#psdFiles">PSD Files</a></li>
+		</ol>
+		<div id="note">
+			<p>Created: 08/15/2010<br/>
+				By: population2<br/>
+				Email: <a href="mailto:populationtwo@gmail.com" target="_blank">populationtwo@gmail.com</a></p>
+			<p> Thank you for purchasing my theme. If you have any questions that are
+				beyond the scope of this help file, please post your questions <a href="http://themeforest.net/item/light-of-peace-wordpress-template/discussion/120416" target="_blank">here</a>. For other questions and feedback feel free to send me a message from my <a href="http://themeforest.net/user/population2" target="_blank">profile page.</a><br/>
+				Thank you!</p>
+		</div>
+	</div>
+	<div class="grid_9">
+		<h2 id="about"><strong>1) About The Theme</strong> - <a href="#toc">top</a></h2>
+		<p>This theme was built and designed to work with version 3.0. Please upgrade
+			your Wordpress to <a href="http://wordpress.org/download/">version 3.0</a>.
+			if you have not already. The theme has not been tested with previous versions
+			of WordPress.</p>
+		<p>The theme is widget ready and you can add and configure your own widgets
+			in the side bar however you like. There are several color schemes installed
+			with the theme. You can activate any of these from the theme options menu.</p>
+		<hr/>
+		<h2 id="install"><strong>2) Installation - top</strong> - <a href="#toc">top</a></h2>
+		<p>Installing the theme can be done two ways. You can upload the zipped theme
+			file, using the built in WordPress theme upload, or copy the files through
+			FTP.</p>
+		<h3>A) Using WordPress Theme Upload</h3>
+		<ol>
+			<li>Login to your WordPress admin.</li>
+			<li>In the Appearance menu click, "Themes"</li>
+			<li>At the top of the page click, "Install Themes" tab then click "Browse"</li>
+			<li>Select the zipped theme file and click "Install Now"</li>
+			<li>After install you will receive the message, "Theme Installed successfully."</li>
+			<li>Click the link "Activate"</li>
+		</ol>
+		<h3>B) Uploading by FTP</h3>
+		<ol>
+			<li>Login to your FTP server and navigate to your WordPress themes directory.
+				Normally this would be "wp-content/themes"</li>
+			<li>Extract the files from the zipped theme.</li>
+			<li>Copy the folder "LOP" to your themes directory.</li>
+			<li>After the files copy, login to your WordPress admin.</li>
+			<li>In the Appearance menu click "Themes"</li>
+			<li>Click "Activate" for the theme "LightofPeace"</li>
+		</ol>
+		<p>Once the theme is installed you are ready to start configuring it for your
+			content. See the section on configuring the theme options below.</p>
+		<hr/>
+		<h2 id="configure"><strong>3) Configuring Theme</strong> - <a href="#toc">top</a></h2>
+		<p>You need to perform these steps, otherwise the theme will not display properly</p>
+		<h3>Home Page setup</h3>
+		<p>You need to change the default homepage to the theme home page template.</p>
+		<ol>
+			<li>Login to your WordPress admin.</li>
+			<li>In the Pages menu click, "Add New". Create a new page called "Home"</li>
+			<li>In the Page Attributes menu, choose Site_Home in the Template drop down."<br/>
+				<img src="img/page_attr.jpg" /> </li>
+			<li>In the Settings menu click, "Reading"</li>
+			<li>Choose "Home" for the Front page in the Front page displays.</li>
+			<li>Save Changes</li>
+		</ol>
+		<h3>Menu Setup</h3>
+		<ol>
+			<li>Create a custom menu, for example "Menu 1"</li>
+			<li>After creating the custom menu, you have several options on Menu Management
+				page to add links. For example, you can simply check the boxes next to the
+				Pages and Categories you want to add then click the Add to Menu button.</li>
+			<li>Create 2 custom menus, one for the Primary Menu and one for Secondary
+				Menu <br/>
+				<img src="img/menu.jpg" /> </li>
+					<li>Select the location for each menu in the Theme Location window. For example "Menu 1" for Primary Menu and "Menu 2" for Secondary Menu.</li>
+		</ol>
+		<h3>Random Page Header Image Setup</h3>
+		<p>Each page template will show a header image randomly. All the header images
+			is in the img > headers folder. You can specify a certain image for a certain
+			page. If you not specify an image, it will show a random image.<br/>
+			<img src="img/page_header.jpg" /></p>
+		<p>You need to edit the page id in header-images.php to do this.</p>
+		<p>Example:</p>
+		<ol>
+			<li>Open any page in the Pages menu</li>
+			<li>Find the page id<br/>
+				<img src="img/page_id.jpg" /></li>
+			<li>Fill the page id in the header-images.php with the page id you found in
+				the Wordpress admin<br/>
+				<img src="img/page_id2.jpg" /><br/>
+				For example, the page with ID 2 will show header-1.jpg. You can
+				add as many header image as you want. </li>
+		</ol>
+		<br/>
+		<h3>Admin Panel </h3>
+		<p>Once the theme is installed you will see a new menu on the bottom left side
+			of your WordPress admin. The theme menu contains the following areas:</p>
+		<ul>
+			<li>
+				<h5>General Options</h5>
+				<p>This area contains settings for choosing the color scheme and changing
+					your logo.</p>
+			</li>
+			<li>
+				<h5>Home Page</h5>
+				<p>The home page section is where you will select the content source for
+					the 3 tabs on the home page. It also contains options for configuring your
+					slide show.</p>
+				<p>You should select the category you will be using for your tabs in this
+					area so you don't forget. If you don't have a category you want to use,
+					create one and select it now.</p>
+			</li>
+			<li>
+				<h5>Sidebar</h5>
+				<p> This is where you fill the content for the Headline Box<br/>
+				<img src="img/headline_box.jpg" /></p>
+				
+				
+			</li>
+			<li>
+				<h5>Footer</h5>
+				<p>This is where you fill the content for the right column footer. You also
+					can change your footer logo and add tracking code.</p>
+			</li>
+		</ul>
+		<h3>Popup Window Setup</h3>
+		<p>This is a little bit complicated. You need to edit popup.js. Follow these
+			steps and you should be good.</p>
+		<ol>
+			<li>Create a custom link, for this example I created "Service Times" link. <br/>
+				<img src="img/service_times.jpg" /></li>
+			<li>Leave the URL blank.</li>
+			<li>Preview you site in the browser. Right click and choose View Source.</li>
+			<li>Find the "Service Times" ID and copy it. <br/>
+				<img src="img/service_times_id.jpg" /></li>
+			</li>
+			<li>Open popup.js, it's located in the js folder. And paste the ID in line
+				62. <br/>
+				<img src="img/popup_js.jpg" /> </li>
+			<li>Edit popup.php and fill the content for the Popup window.<br/>
+				<img src="img/popup_content.jpg" /></li>
+		</ol>
+		<h3>Recommended Plugins</h3>
+		<p>Install the plugins in the plugins folder. This theme was designed to work
+			with these plugins:</p>
+		<h4>1. Clean-Contact</h4>
+		<p>No hassle contact form plugin with advanced Spam protection that doesn't
+			require Captcha.You just need to create a page or post with the shortcode:
+			[clean-contact]. <a href="http://www.checkfront.com/extras/wp-clean-contact">Visit
+			plugin site</a></p>
+		<h4>2. Simple Twitter Widget</h4>
+		<p>A simple but powerful widget to display updates from a Twitter feed. Configurable,
+			reliable and with advanced caching.<a href="http://chipsandtv.com/">Visit
+			plugin site</a></p>
+		<h4>3. Social Media Widget</h4>
+		<p>Adds links to all of your social media and sharing site profiles. Icons
+			come in 3 sizes, 4 icon styles, and 4 animations. <a href="http://www.idontlikethisgame.com/updates/social-media-widget/">Visit
+			plugin site</a></p>
+		<hr/>
+		<h2 id="htmlStructure"><strong>4) HTML Structure</strong> - <a href="#toc">top</a></h2>
+		<p>This theme is a fixed layout with two columns. All of the information within
+			the main content area is nested within a div with an id of <strong>content-left</strong>.
+			The sidebar's content is within a div with an id of <strong>content-right</strong>.
+			Here is the general structure of the typical page:</p>
+		<img src="img/main.jpg" alt="HTML Structure" />
+		<ul>
+			<li><strong>#wrapper</strong> div holds the header and content.</li>
+			<li><strong>#main</strong> div is used to center its content (<strong>#content</strong> and <strong>#header</strong>).</li>
+			<li><strong>#header</strong> div contains logo, top menu, and navigation bar.</li>
+			<li><strong>#content</strong> div is the main content area of the site. It
+				holds <strong>#content-left</strong> and <strong>#content-right</strong> (most
+				people called it sidebar).</li>
+			<li><strong>#popupContact</strong> div holds the popup window for service
+				times and direction.</li>
+			<li><strong>#footer</strong> consists of secondary menu items and contact
+				information.</li>
+		</ul>
+		<hr/>
+		<h2 id="cssFiles"><strong>5) CSS Files and Structure</strong> - <a href="#toc">top</a></h2>
+		<p>CSS files in this theme:</p>
+		<h3>A. style.css</h3>
+		<p>This contains the specific styling for the page. The file is separated into
+			sections using: </p>
+		<ol>
+			<li>CSS RESET</li>
+			<li>BASIC ELEMENTS</li>
+			<li>GENERAL LAYOUT
+				<ul>
+					<li>Header</li>
+					<li>Content</li>
+					<li>Sidebar</li>
+					<li>Footer</li>
+				</ul>
+			</li>
+			<li>HOME PAGE
+				<ul>
+					<li>Slide</li>
+					<li>Tabs</li>
+					<li>Headline</li>
+				</ul>
+			</li>
+			<li>CONTACT PAGE</li>
+			<li>NEWS PAGE / BLOG</li>
+			<li>MISC
+				<ul>
+					<li>Button</li>
+					<li>Pop Up Window</li>
+					<li>Plug Ins</li>
+				</ul>
+			</li>
+		</ol>
+		<h3>B. superfish.css</h3>
+		<p>This contains the styling for the navigation bar (#nav).</p>
+		<br/>
+		<h3>Style Guide</h3>
+		<p>Here are a few css styling guide:</p>
+		<img src="img/headline_box_style.jpg" /><br/><br/>
+		<img src="img/heading.jpg" /><br/><br/>
+		<img src="img/profile.jpg" /><br/><br/>
+		<img src="img/btn.jpg" /><br/><br/>
+
+	<hr/>
+		<h2 id="javascript"><strong>6) JavaScript</strong> - <a href="#toc">top</a></h2>
+		<p>This theme imports these Javascript files.</p>
+		<h3>A. jQuery</h3>
+		<p>A fast, lightweight, extensible JavaScript Library that simplifies how you
+			traverse HTML documents, handle events, perform animations, and add Ajax interactions
+			to your web pages.</p>
+		<h3>B. cufon (cufon-yui.js and Bebas_400.font.js )</h3>
+		<p>This script is used to replace the fonts with non-standard fonts. The font
+			I used for this theme is Bebas. It’s free and can be downloaded at <a href="http://www.fontsquirrel.com/fonts/Bebas">http://www.fontsquirrel.com/fonts/Bebas</a> <br />
+			You can replace any text with cufon by adding &quot;replace&quot; class. <a href="http://wiki.github.com/sorccu/cufon ">More
+			information</a> about cufon</p>
+		<h3>C. superfish (superfish.js and hoverIntent.js )</h3>
+		<p>Creates enhanced Suckerfish-style dropdown menus from existing pure CSS
+			dropdown menus. Full documentation at <a href="http://plugins.jquery.com/project/Superfish">http://plugins.jquery.com/project/Superfish</a></p>
+		<h3>D. png fix (jquery.pngFix.pack.js)</h3>
+		<p>This plugin will fix the missing PNG-Transparency in Windows Internet Explorer
+			5.5 &amp; 6. Full documentation at <a href="http://jquery.andreaseberhard.de/pngFix/index.html">http://jquery.andreaseberhard.de/pngFix/index.html</a></p>
+		<h3>E. popup (popup.js)</h3>
+		<p>This script is for popup window to show direction and service times information.
+			Credits to Adrian &quot; yEnS&quot;  Mato Gondelle <a href="http://www.yendesign.com/">www.yensdesign.com</a></p>
+		<h3>F. Nivo Slider (jquery.nivo.slider.js)</h3>
+		<p>This is a script to create a slideshow on the homepage. You can read further
+			documentation <a href="http://nivo.dev7studios.com/">here</a><br />
+			This script is only embedded in the home.html.</p>
+		<hr/>
+		<h2 id="credits"><strong>7) Sources and Credits</strong> - <a href="#toc">top</a></h2>
+		<p>I've used the following images, javascript, font, icons or other files as
+			listed.</p>
+		<ul>
+			<li>Icons:<a href="http://nouveller.deviantart.com/art/Social-Media-Bookmark-Icon-125995730">Social
+					Media Bookmark Icon +</a> by nouveller</li>
+			<li>Font: <a href="http://www.dafont.com/optimusprinceps.font">Optimus Princeps</a></li>
+			<li>Font: <a href="http://www.fontsquirrel.com/fonts/Bebas">Bebas</a></li>
+			<li>Images: Envato asset library</li>
+			<li>Image Rotator: <a href="http://photomatt.net">Matt Mullenweg</a> </li>
+		</ul>
+		<hr/>
+		<h2 id="psdFiles"><strong>8) PSD Files</strong> - <a href="#toc">top</a></h2>
+		<p>I've included ten PSDs with this theme:</p>
+		<ol>
+			<li>Home Page layout in 4 color schemes</li>
+			<li>Six PSDs of the default color (green):<br />
+				<ul>
+					<li>about.psd</li>
+					<li>contact.psd</li>
+					<li>gallery.psd</li>
+					<li>home.psd</li>
+					<li>news.psd</li>
+					<li>sermons.psd</li>
+				</ul>
+			</li>
+			<li>Seamless background file - texture-bg.psd</li>
+		</ol>
+<hr />		
+		<p><a href="#toc">Go To Table of Contents</a></p>
+	</div>
+	<div class="clear">&nbsp;</div>
+</div>
+</body>
+</html>

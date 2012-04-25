@@ -1,0 +1,31 @@
+a { color: #842b21; }
+::selection {
+background: #842b21;
+color: #fff;
+}
+::-moz-selection {
+background: #842b21;
+color: #fff;
+}
+#wrapper { background:url(img/header-bg-red.png) top center repeat-x; border-top: 7px solid #333332; }
+#nav { background: url(img/nav-bg-red.png) repeat-x; }
+#menu { background: #333332; }
+#menu > li { background:#333332 none repeat scroll 0 0; }
+#menu > li a:hover { color:#d24231; }
+#menu li ul { background-color:#2D2B28; color:#5694C0; }
+#menu li ul li a:hover { color:#d24231; }
+.post-title a { color:#842b21; }
+#footer-wrapper { background: #493730 url(img/footer-bg-red.png) repeat-x top; color:#CDCABE; }
+#footer ul li a { color:#CDCABE; }
+.headline_box { background: url(img/box-top-red.png) no-repeat center top; }
+.headline_box div.middle { background: url(img/box-mid-red.png) repeat-y center; }
+.headline_box div.bottom { background: url(img/box-bottom-red.png) no-repeat center; }
+.headline_box div.middle p { font-size: 14px; color: #dedddb; }
+p.author { color: #842b21; }
+ul.side-list li a span { color:#842b21; }
+.btn1 { background: #b65023 !important; }
+.btn1:hover { background: #2e2e2e !important; }
+.btn2 { background: #b65023 url(img/btn-bg-red.png) repeat-x left top !important; border: 1px solid #b65023 !important; }
+.btn2:hover { background: #2e2e2e !important; }
+input#clean_contact_send { background: #b65023 !important; }
+.twitter-date a { color: #CE6F4F !important; }

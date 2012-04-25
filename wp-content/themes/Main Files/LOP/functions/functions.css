@@ -1,0 +1,14 @@
+.pt_wrap { width:800px; }
+.pt_section { border:1px solid #ddd; border-bottom:0; background:#f9f9f9; }
+.pt_opts label { font-size:12px; font-weight:700; width:200px; display:block; float:left; }
+.pt_input { padding:10px 10px; border-bottom:1px solid #ddd; border-top:1px solid #fff; }
+.pt_opts small { display:block; float:right; width:250px; color:#999; }
+.pt_opts input[type="text"], .pt_opts select { width:280px; font-size:12px; padding:4px; color:#333; line-height:1em; background:#f3f3f3; }
+.pt_input input:focus, .pt_input textarea:focus { background:#fff; }
+.pt_input textarea { width:280px; height:175px; font-size:12px; padding:4px; color:#333; line-height:1.5em; background:#f3f3f3; }
+.pt_title h3 { cursor:pointer; font-size:1.2em; margin:0 0 0 6px; font-weight:bold; color:#333; float:left; width:80%; padding:10px 4px; }
+.pt_title { cursor:pointer; border-bottom:1px solid #ddd; background: #DFDFDF; padding:0; }
+.pt_title span.submit { display:block; float:right; margin:0; padding:0; width:15%; padding:8px 0; }
+.clearfix { clear:both; }
+.pt_table th, .pt_table td { border:1px solid #bbb; padding:10px; text-align:center; }
+.pt_table th, .pt_table td.feature { border-color:#888; }

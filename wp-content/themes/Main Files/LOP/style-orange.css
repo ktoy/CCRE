@@ -1,0 +1,29 @@
+a { color: #894a0b; }
+::selection {
+background: #BF6000;
+color: #fff;
+}
+::-moz-selection {
+background: #BF6000;
+color: #fff;
+}
+#wrapper { background:url(img/header-bg-orange.png) top center repeat-x; border-top: 7px solid #333332; }
+#nav { background: url(img/nav-bg-orange.png) repeat-x; }
+#menu { background: #333332; }
+#menu > li { background:#333332 none repeat scroll 0 0; }
+#menu > li a:hover { color:#EC8217; }
+#menu li ul { background-color:#2D2B28; color:#5694C0; }
+#menu li ul li a:hover { color:#EC8217; }
+.post-title a { color:#894a0b; }
+#footer-wrapper { background: #4a3e39 url(img/footer-bg-orange.png) repeat-x top; color:#CDCABE; }
+#footer ul li a { color:#CDCABE; }
+.headline_box { background: url(img/box-top-orange.png) no-repeat center top; }
+.headline_box div.middle { background: url(img/box-mid-orange.png) repeat-y center; }
+.headline_box div.bottom { background: url(img/box-bottom-orange.png) no-repeat center; }
+.headline_box div.middle p { color: #DCD8D1; }
+p.author { color: #894a0b; }
+ul.side-list li a span { color:#894a0b; }
+.btn1 { background: #934c07 !important; }
+.btn2 { background: #934c07 url(img/btn-bg-orange.png) repeat-x left top !important; border: 1px solid #415e6e !important; }
+input#clean_contact_send { background: #934c07 !important; }
+.twitter-date a { color: #BF6000 !important; }
